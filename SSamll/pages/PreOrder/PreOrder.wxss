@@ -1,0 +1,31 @@
+page{min-height: 100%;background: #eee;font-size: 28rpx;}
+/* top */
+.up{width: 100%;height: 180rpx;background-color: white;margin-top: 10rpx;padding-top: 10rpx;}
+.top{display: flex;justify-content: space-between;}
+.up image{width:50rpx;height: 50rpx;}
+.v-ico{width:50rpx;height: 50rpx;margin-left: 10rpx;}
+.v-adress{width:680rpx;height: 100rpx;border-bottom: 1px solid #eee;}
+.v-adress view{margin-left: 20rpx;margin-bottom: 10rpx}
+.v-editandchange{margin-top: 20rpx;}
+.v-editandchange image{width:40rpx;height: 40rpx;}
+.v-editandchange,.v-edit,.v-change{display: flex;justify-content: flex-end;margin-right: 20rpx;}
+
+/* 中部 */
+.section{width: 100%;background-color: white;margin-top: 10rpx;}
+.section view{width: 90%;margin: 0 auto;}
+
+.product-list{display: flex;justify-content: space-between;padding: 20rpx 0rpx;border-bottom: 1rpx solid #eee;}
+.product-img{width: 120rpx; height: 120rpx;}
+.product-text{width:max-content;display: flex;justify-content: space-between}
+.product-price{padding-top: 44rpx}
+
+.Explain{height: 70rpx;line-height: 70rpx;border-bottom:1rpx solid #eee;display: flex;justify-content: space-between}
+.ly-t{width: 580rpx;height: 42rpx;padding-top: 10rpx;} 
+
+
+/* 页底部 */
+.shop-all{position: fixed;bottom: 0;left: 0;width: 100%;height: 80rpx;background: #fff;align-items:center;display: flex;justify-content: flex-end}
+.price-btn{width: 150rpx;height: 100%;background: #f97127;color: #fff;line-height:80rpx;text-align:center;}
+.price-text{margin-right: 20rpx;}
+
+.add-adress{width: 360rpx;height: 80rpx;background: #f97127;border-radius: 40rpx;color:#fff;font-size: 36rpx;text-align: center;line-height: 80rpx;margin: 40rpx auto;}

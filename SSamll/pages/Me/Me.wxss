@@ -1,0 +1,6 @@
+page{background-color:#eee}
+.header,.nav_order{width: 100%;height: 200rpx;margin-top: 10rpx;background-color: white;display: flex;justify-content: space-between}
+.header image{width: 200rpx;height: 200rpx;margin-left: 50rpx}
+.header text{margin-top: 60rpx;margin-right: 260rpx;font-size: 45rpx;font-weight: bolder;letter-spacing:5rpx;}
+.nav_order{height: 300rpx;}
+.order{width: 90%;height: 80rpx;margin: 0 auto; border-bottom: 1rpx solid #eee;font-size: 28rpx; display: flex;justify-content: space-between;line-height: 80rpx;}

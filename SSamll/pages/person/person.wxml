@@ -1,0 +1,76 @@
+<!--person.wxml-->
+<view class="container">
+  <view class='top-tab'>
+    <view class='order {{current==0?"active":" "}}' bindtap='changeTab' data-current='0'>我的订单</view>
+    <view class='adress {{current==1?"active":" "}}' bindtap='changeTab' data-current='1'>地址管理</view>
+  </view>
+  <swiper current="{{current}}" style="height:{{windowHeight-45}}px">
+    <swiper-item>
+      <view class='order-list' wx:for='{{orderList}}' data-index='{{index}}'>
+        <view class='title' data-id='{{item.orderNumber}}' bindtap='ViewOrderDetail'>
+          <text>订单号：{{item.orderNumber}}</text>
+          <text style="color:#f97127">{{item.statename}}</text>
+        </view>
+        <view class='product-mes' wx:for='{{item.proList}}' >
+          <view data-id='{{item.id}}' bindtap='ViewProduct'>
+            <image class='shop-car-img' src='{{item.src}}'></image>
+          </view>
+          <view class='pro-right' data-id='{{item.id}}' bindtap='ViewProduct'>
+            <view class='pro-name'>
+              <text>{{item.name}}</text>
+              <text style='color:#f97127'>￥{{item.price}}</text>
+            </view>
+            <view class='pro-num'>
+              <text>{{item.dec}}</text>
+              <text>x{{item.num}}</text>
+            </view>
+          </view>
+        </view>
+        <view class='pro-result'>
+          <text>共{{item.proList.length}}种商品</text>
+          <text>合计:￥{{item.priceAll}}</text>
+        </view>
+      </view>
+    </swiper-item>
+    <swiper-item>
+      <view class='adress-list' wx:for='{{adressList}}'>
+        <view class='person-adr'>
+          <view class='pa-name'>
+            <text>{{item.PerName}}</text>
+            <text>{{item.PerMobile}}</text>
+          </view>
+          <view class='pa-tl'>{{item.Province}}{{item.City}}{{item.Area}}{{item.Addrdetil}}</view>
+          <view class='pa-default'>
+            <view class='check-all' bindtap="setDefault" wx:if='{{item.StateId==2}}' data-index='{{index}}'>
+              <view class='check-wrap'>
+                <image class='check-box' src='{{checkBoxImgSrc}}'></image>
+              </view>
+              <view class='check-wrap-text'>设为默认</view>
+            </view>
+            <view class='check-all' bindtap="setDefault" wx:else data-index='{{index}}'>
+              <view class='check-wrap'>
+                <image class='check-box' src=' '></image>
+              </view>
+              <view class='check-wrap-text'>设为默认</view>
+            </view>
+            <view class='pa-change'>
+              <view class='flex' bindtap='editAdr' data-id='{{item}}'>
+                <view>
+                  <image src='../../img/change_03.png'></image>
+                </view>
+                <view>编辑</view>
+              </view>
+              <view class='flex margin-left'bindtap='delateAdr' data-id='{{item}}'>
+                <view>
+                  <image src='../../img/delate_05.png'></image>
+                </view>
+                <view >删除</view>
+              </view>
+            </view>
+          </view>
+        </view>
+      </view>
+      <view class='add-adress' bindtap='addadr'>新增地址</view>
+    </swiper-item>
+  </swiper>
+</view>

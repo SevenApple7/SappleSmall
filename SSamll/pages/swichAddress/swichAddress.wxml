@@ -1,0 +1,10 @@
+
+<view class='adress-list' wx:for='{{adressList}}'>
+  <view class='person-adr' data-id='{{item}}' bindtap='select'>
+    <view class='pa-name'>
+      <text>{{item.PerName}}</text>
+      <text>{{item.PerMobile}}</text>
+    </view>
+    <view class='pa-tl'>{{item.Province}}{{item.City}}{{item.Area}}{{item.Addrdetil}}</view>
+  </view>
+</view>

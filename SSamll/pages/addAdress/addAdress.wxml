@@ -1,0 +1,19 @@
+<view class='body'>
+  <view class="section">
+    <input maxlength="10" placeholder="添加你的姓名" bindinput='getPerName' value='{{PerName}}'/>
+  </view>
+  <view class="section">
+    <input maxlength="11" placeholder="添加你的手机号" bindinput='getPerMobile' value='{{PerMobile}}'/>
+  </view>
+  <view class="section">
+    <picker mode="region" bindchange="bindRegionChange" value="{{region}}" custom-item="{{customItem}}">
+      <view class="picker">
+        选择地区：{{region[0]}}，{{region[1]}}，{{region[2]}}
+      </view>
+    </picker>
+  </view>
+  <view class="section">
+    <input maxlength="30" placeholder="请输入详细地址" bindinput='getAddrdetil' value='{{Addrdetil}}'/>
+  </view>
+</view>
+<view class="foot" data-id='{{region}}' bindtap='saveAdr'>保存地址</view>

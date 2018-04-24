@@ -1,0 +1,64 @@
+<view class='up'>
+  <view class='top'>
+    <view class='v-ico'>
+      <image src='../../img/adrico.png'></image>
+    </view>
+    <view class='v-adress'>
+      <view>{{info.name}} {{info.phone}}</view>
+      <view>{{info.adrDetail}}</view>
+    </view>
+  </view>
+</view>
+
+<view class='section'>
+  <view class="product-list" wx:for="{{info.productList}}">
+    <image class="product-img" src='{{item.ProductImage}}'></image>
+    <view>
+      <view class="product-text">
+        <text class="pt-name">{{item.ProductName}}</text>
+        <text class="pt-num">x{{item.Num}}</text>
+      </view>
+      <view class="product-price">
+        <text>{{item.ProductPrice}}元</text>
+      </view>
+    </view>
+  </view>
+</view>
+
+<view class='section foot'>
+  <view class='Explain'>
+    <text>支付方式：</text>
+    <text class='Tshow'>微信支付</text>
+  </view>
+  <view class='Explain'>
+    <text>商品金额：</text>
+    <text class='Tshow'>￥{{info.Amount}}</text>
+  </view>
+  <view class='Explain'>
+    <text>优惠金额：</text>
+    <text class='Tshow'>-￥0</text>
+  </view>
+</view>
+
+<view class='section foot'>
+  <view class='Explain'>
+    <text>订单编号：</text>
+    <text class='Tshow'>{{info.OrderId}}</text>
+  </view>
+  <view class='Explain'>
+    <text>创建时间：</text>
+    <text class='Tshow'>{{info.Createdate}}</text>
+  </view>
+  <view class='Explain'>
+    <text>更新时间：</text>
+    <text class='Tshow'>{{info.RefreshDate}}</text>
+  </view>
+  <view class='Explain'>
+    <text>订单状态：</text>
+    <text class='Tshow'>{{info.statename}}</text>
+  </view>
+</view>
+<!--<view class='shop-all'>
+  <text class='price-text'>实付款：<text style='color:#f97127'>￥{{info.Amount}}</text></text>
+  <view class='price-btn' bindtap='pay' data-id="{{info}}">支付订单</view>
+</view>-->

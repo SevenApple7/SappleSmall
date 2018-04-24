@@ -1,0 +1,5 @@
+page{font-size: 30rpx;}
+.body{margin-top: 50rpx;}
+input{background-color: white;}
+.section{margin:20rpx auto;border-bottom: 1rpx solid #eee;padding-bottom: 20rpx;width: 90%;}
+.foot{width: 90%;height: 80rpx;margin: 100rpx auto; background: #D0473F;line-height: 80rpx;color: #fff;text-align: center;}

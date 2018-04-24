@@ -1,0 +1,33 @@
+/**person.wxss**/
+page{min-height: 100%;background: #eee;}
+.flex{display: flex;justify-content: center;align-items: center;}
+swiper-item{overflow-y: scroll}
+.container{background: #eee;min-height: 100%;width:100%}
+.top-tab{display: flex;justify-content: center;align-items: center;margin-bottom: 20rpx}
+.order,.adress{width: 50%;text-align: center;background: #fff;height: 80rpx;line-height: 80rpx;}
+.order-list{background: #fff;padding-bottom: 0rpx;margin-bottom: 10rpx}
+.title{display: flex;justify-content:space-between;align-items: center;font-size: 30rpx;height: 44rpx;line-height: 44rpx;padding: 0 20rpx;border-bottom: 1rpx #eee solid}
+.product-mes{display: flex;justify-content:left;align-items: center;padding: 20rpx 40rpx;border-bottom: 1rpx #eee solid}
+.pro-right{flex: 1;font-size: 30rpx}
+.shop-car-img{width: 140rpx;height:140rpx;margin: 0 50rpx 0 0rpx}
+.pro-name,.pro-num{display: flex;justify-content:space-between;align-items: center;}
+.pro-name{margin-bottom: 20rpx}
+.pro-result{text-align: right;padding-right: 40rpx;margin-bottom: 16rpx}
+.pro-result text{margin-left: 20rpx;font-size: 30rpx}
+.change-btn{display: flex;justify-content: flex-end;align-items: center;padding-right: 40rpx;}
+.change-btn view{width: 141rpx;height: 60rpx;line-height: 60rpx;border-radius: 30rpx;font-size: 28rpx;text-align: center}
+.delate-btn{border: 1rpx solid #000}
+.pay-btn{background: #f97127;color: #fff;border: 1rpx solid #f97127;margin-left: 30rpx}
+.active{background: #f97127;color: #fff}
+
+/*地址管理  */
+.adress-list{background: #fff;padding: 20rpx 0;margin-bottom: 18rpx;font-size: 30rpx}
+.pa-default,.check-all,.pa-change{display: flex;align-items:center;height: 100% }
+.pa-change image{width: 30rpx;height:30rpx}
+.pa-default{justify-content:  space-between;padding-right: 20rpx}
+.pa-name{display: flex;justify-content: space-between;align-items: center;padding: 0 20rpx}
+.pa-tl{border-bottom: 1rpx solid #eee;padding: 0 20rpx 10rpx;margin-top: 20rpx;margin-bottom: 20rpx;font-size: 24rpx;color: #666}
+.check-wrap{width:30rpx;height:30rpx;margin-left: 30rpx;border: 1px solid #333;border-radius: 50%;display: flex;justify-content:center;align-items:center;margin-right: 20rpx }
+.check-box{width: 50%;height: 50%;}
+.margin-left{margin-left: 20rpx}
+.add-adress{width: 360rpx;height: 80rpx;background: #f97127;border-radius: 40rpx;color:#fff;font-size: 36rpx;margin: 0 auto;text-align: center;line-height: 80rpx;margin-top: 40rpx}

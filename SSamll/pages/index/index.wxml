@@ -1,0 +1,35 @@
+<view class="container">
+  <!-- <swiper indicator-dots="{{indicatorDots}}" autoplay="{{autoplay}}" interval="{{interval}}" duration="{{duration}}" indicator-color="{{indicatorColor}}" indicator-active-color="{{indicatorActiveColor}}">
+    <block wx:for="{{imgUrls}}">
+      <swiper-item>
+        <image src="{{item}}" class="slide-image" />
+      </swiper-item>
+    </block>
+  </swiper> -->
+  <view class='mtop'><image src='../../img/Logo.png'></image></view>
+  <view class="nav-list">
+    <view wx:for="{{navList}}">
+      <navigator url="{{item.link}}" open-type="switchTab" hover-class="none">
+        <image src="{{item.src}}" class="nav-icon" />
+        <text class="nav-text">{{item.name}}</text>
+      </navigator>
+    </view>
+  </view>
+  <view class="hot">
+    <image class="hot-icon" src="../../img/hot.png"></image>
+    <text>{{hotTitle}}</text>
+    <!--<view class="refresh">换一换
+      <image class="refresh-icon" src="../../img/change.png"></image>
+    </view>-->
+  </view>
+  <view class="product">
+    <view class="product-list" wx:for="{{productList}}">
+      <image class="product-img" src="{{item.src}}" data-id="{{item.Pid}}" bindtap='showp'></image>
+      <view class="product-text" data-id="{{item.Pid}}" bindtap='showp'>
+        <text class="pt-name">{{item.name}}</text>
+        <text class="pt-dec">{{item.dec}}</text>
+        <text class="pt-price">{{item.price}} 元</text>
+      </view>
+    </view>
+  </view>
+</view>

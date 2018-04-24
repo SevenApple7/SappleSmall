@@ -1,0 +1,27 @@
+<view wx:for="{{productList}}">
+  <view class="top" >
+    <image src='{{item.src}}'></image>
+  </view>
+  <!--title  -->
+  <view class='s-box' >
+    <view class='s-title'>{{item.Pname}}</view>
+    <view class='kq' style='margin-left:0rpx'> {{item.dec}}</view>
+    <view class='kq'>{{item.price}} 元</view>
+  </view>
+  <scroll-view>
+    <view></view>
+  </scroll-view>
+  <!--foot  -->
+  <view class='s-foot'>
+   <view class='foot-kl' bindtap='index'>
+      <image src='../../img/1.png'></image>
+      <text>首页</text>
+    </view>
+    <view class='foot-kl' bindtap='shopCart'> 
+      <image src='../../img/2.png'></image>
+      <text>购物车</text>
+    </view>
+    <view class='foot-kc' data-id='{{item.Pid}}' bindtap='addCart'>加入购物车</view>
+    <view class='foot-kc vb' data-id='{{item}}' bindtap='buy'>立即购买</view>
+  </view>
+</view>

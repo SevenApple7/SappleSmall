@@ -1,0 +1,33 @@
+.selectentrustterms {
+  width: 400px;
+  height: 600px;
+  margin: 0 auto;
+  background: #fff;
+  overflow: hidden;
+  position: relative;
+}
+
+.title {
+  text-align: center;
+  color: #d43e18;
+  font-size: 60px;
+}
+
+.submitbtn {
+  width: 400px;
+  height: 44px;
+  line-height: 44px;
+  border: 1px solid #eee !important;
+  /*margin:15px 10px 0;*//*margin:15px 0 0;*/
+  background: #d0473f;
+  border: none !important;
+  color: #fff;
+  font-size: 15px;
+  position: absolute;
+  bottom: 0px;
+}
+
+.content {
+  text-align: center;
+  font-size: 16px;
+}

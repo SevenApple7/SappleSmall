@@ -1,0 +1,21 @@
+/**index.wxss**/
+.container{background: #f1f1f1}
+swiper{width: 100%;margin-bottom: 15rpx}
+.slide-image{width: 100%;height: 100%}
+.nav-list{display: flex;justify-content:center;align-items:center;background: #fff;padding: 30rpx 0;margin-bottom: 15rpx}
+.nav-list view{flex: 1;text-align: center;}
+.nav-icon{width:40rpx;height: 40rpx;display: block;margin: 0 auto }
+.nav-text{font-size: 24rpx}
+.hot{display: flex;justify-content:center;align-items:center;background: #fff;margin-bottom: 15rpx;padding: 20rpx;position: relative}
+.hot-icon{width: 60rpx;height: 60rpx}
+.refresh{position: absolute;right: 20rpx;bottom: 10rpx;font-size: 30rpx}
+.refresh-icon{width: 28rpx;height: 24rpx;margin-left: 6rpx}
+.product{margin-bottom: 15rpx}
+.product .product-list{display: flex;padding: 20rpx 0;margin-bottom: 15rpx;background: #fff;padding: 20rpx;}
+.product-img{width: 140rpx;height: 140rpx;background: #eee;margin-right: 40rpx;border-radius: 50%;margin-left: 60rpx}
+.product-text text{display: block}
+.pt-name,.pt-price{color: #ff6f00;font-size: 30rpx}
+.pt-dec{color: #666;font-size: 24rpx;padding-bottom: 15rpx}
+
+.mtop{width:100%;height:190.5rpx;background-color: white;}
+.mtop image{width:314rpx;height:190.5rpx;display:block;margin: 0 auto;}

@@ -1,0 +1,44 @@
+<!--index.wxml-->
+<view class='container'>
+  <view class='shop-list'>
+    <view class='model-sl' wx:for='{{shopImg}}'>
+      <view class='check-wrap' bindtap="selectList" wx:if='{{item.selected}}' data-index="{{index}}">
+        <image class='check-box' src='{{checkBoxImgSrc}}'></image>
+      </view>
+      <view class='check-wrap' bindtap="selectList" wx:else data-index="{{index}}">
+        <image class='check-box' src=''></image>
+      </view>
+      <view class='shop-car-img'  data-id="{{item.Pid}}" bindtap='showp'>
+        <image src='{{item.src}}'></image>
+      </view>
+      <view class='shop-car-text' data-id="{{item.id}}" bindtap='showp'>
+        <text class='sct-name'>{{item.name}}</text>
+        <text class='sct-dec'>{{item.dec}}</text>
+        <view class='shop-car-price'>
+          <text class='sct-price'>￥{{item.price}}</text>
+          <text class='sct-num'>x{{item.num}}</text>
+        </view>
+      </view> 
+    </view>
+  </view>
+  
+  <view class='shop-all'>
+    <view class='check-all' wx:if="{{selectAllStatus}}" bindtap="selectAll">
+      <view class='check-wrap' >
+        <image class='check-box' src='{{checkBoxImgSrc}}'></image>
+      </view>
+      <view class='check-wrap-text'>全选</view>
+    </view>
+    <view class='check-all' wx:else bindtap="selectAll">
+      <view class='check-wrap' >
+        <image class='check-box' src=''></image>
+      </view>
+      <view class='check-wrap-text'>全选</view>
+    </view>
+    <view class='price-wrap'>
+      <text class='price'>合计:<text style='color:#f97127'>￥{{totalPrice}}</text>
+      </text>
+      <view class='price-btn' bindtap='pay'>结算</view>
+    </view>
+  </view>
+</view>

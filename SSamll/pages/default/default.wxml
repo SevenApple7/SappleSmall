@@ -1,0 +1,15 @@
+<view style="background:#ccc;">
+    <view class="selectentrustterms">
+        <view style="background:#D83C16;width:207px;height:125px;margin:0 auto;margin-top:20px;overflow:hidden;">
+            <view style="width:195px;height:107px;margin:0 auto;border:1px solid #fff;margin-top:8px;">
+                <image src="../../img/word.png" alt="" style="width:195px;height:107px;"/>
+            </view>
+        </view>
+        <view class="title">营养苹果君</view>
+        <view class="content">--- 浑然天成 品质如一 ---</view>
+        <view style="width:300px;height:255px;margin:0 auto;">
+            <image src="../../img/apple.png" alt="" style="width:300px;height:255px;"/>
+        </view>
+        <button class="submitbtn">查看</button>
+    </view>
+</view>

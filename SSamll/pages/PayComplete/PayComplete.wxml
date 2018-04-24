@@ -1,0 +1,6 @@
+<view class='header'>
+  <icon type="success" size="60"></icon>
+  <text>支付成功</text>
+</view>
+
+<button class='back' bindtap="Backindex" type="primary">返回首页</button>

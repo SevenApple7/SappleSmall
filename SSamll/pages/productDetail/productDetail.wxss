@@ -1,0 +1,100 @@
+.top {
+  width: 100%;
+  height: 680rpx;
+}
+
+.top image {
+  width: 100%;
+  height: 100%;
+}
+
+.s-box {
+  width: 100%;
+  height: auto;
+  padding-left: 30rpx;
+  box-sizing: border-box;
+}
+
+.s-title {
+  font-size: 30rpx;
+  font-weight: bold;
+  margin-top: 25rpx;
+}
+
+.jg {
+  font-size: 35rpx;
+  color: #ff7100;
+  margin-top: 10rpx;
+}
+
+.kq {
+  font-size: 25rpx;
+  margin-top: 10rpx;
+  float: left;
+  margin-left: 30rpx;
+}
+
+.s-show {
+  width: 100%;
+  height: 50rpx;
+  font-size: 30rpx;
+  padding-left: 30rpx;
+  box-sizing: border-box;
+  clear: both;
+  margin-top: 80rpx;
+  background: #f1f1f1;
+}
+
+.s-foot {
+  width: 100%;
+  height: 80rpx;
+  background: #fafbfb;
+  border-top: 1rpx solid #f1f1f1;
+  position: fixed;
+  left: 0;
+  bottom: 0px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.foot-kl {
+  width: 125rpx;
+  height: 100%;
+  text-align: center;
+  position: relative;
+  font-size: 20rpx;
+}
+
+.foot-kl::after {
+  content: "";
+  position: absolute;
+  width: 1rpx;
+  height: 100rpx;
+  background: #f1f1f1;
+  right: 0px;
+  top: 0px;
+}
+.foot-kl image{
+  width: 40rpx;
+  height: 40rpx;
+  margin-top: 10rpx;
+}
+.foot-kl text{
+  display: block;
+}
+
+.foot-kc {
+  width: 252rpx;
+  text-align: center;
+  line-height: 80rpx;
+  font-size: 30rpx;
+  color: #fff;
+  background: #f5a623;
+}
+
+.vb {
+  background: #ff7100;
+}
+
+
+

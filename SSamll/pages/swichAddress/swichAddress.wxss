@@ -1,0 +1,5 @@
+page{font-size: 30rpx;background-color: #eee}
+.person-adr{width: 100%;background-color: white;margin: 0 auto;margin-top:10rpx }
+.pa-name{display: flex;justify-content: space-between;}
+.pa-name text{margin:10rpx}
+.pa-tl{font-size: 24rpx;color: #666;margin:10rpx}
